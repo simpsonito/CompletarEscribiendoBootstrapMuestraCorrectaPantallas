@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Completar escribiendo</title>
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- JQuery UI -->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css">
+    <link href="css/estilos.css" rel="stylesheet" />
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div id="main" class="main">
+        <section class="container">
+            <div class="row">
+                <div class="col-md-12 wow bounceInUp" style="padding:20px">
+                    <p class="instrucciones">
+                        Completa lo que se te pide:
+                    </p>
+                    <div id="completable">
+                        <p>Se conoce como <input type="text" data-respuesta="asegurado"> a la persona que <input type="text" data-respuesta="contrata"> la cobertura del seguro y cumple con los requisitos establecidos por la compañía <input type="text" data-respuesta="aseguradora">.</p>
+                        <p>En BANORTE se manejan dos tipos de cobertura; en la cobertura <input type="text" data-respuesta="básica"> se considera al <input type="text" data-respuesta="titular"> y coacreditado. Este seguro contempla: Fallecimiento, invalidez permanente y total, daños a inmueble y contenidos.</p>
+                        <p>En la cobertura <input type="text" data-respuesta="amplia"> se incluyen incluye dos coberturas adicionales dirigidas a <input type="text" data-respuesta="mujeres"> que participen o no aportando <input type="text" data-respuesta="ingresos">.</p>
+                        <p>BANORTE ofrece además el seguro de <input type="text" data-respuesta="daños">, el cual tiene los siguientes beneficios: asistencia en el hogar, <input type="text" data-respuesta="robo"> de objetos personales, protección ante <input type="text" data-respuesta="fenómenos de la naturaleza"> y responsabilidad <input type="text" data-respuesta="civil familiar">.</p>
+                        <p>De igual forma los clientes pueden gozar de un seguro de <input type="text" data-respuesta="desempleo"> siempre y cuando demuestren ser <input type="text" data-respuesta='["empleados", "trabajadores"]'> activos de una empresa mínimo <input type="text" data-respuesta="24 meses">, tener más de <input type="text" data-respuesta="21 años"> y menos de <input type="text" data-respuesta="60 años"> y que la empresa cuente con <input type="text" data-respuesta="RFC"> (excepto cuanto se labore dentro de <input type="text" data-respuesta="gobierno">)</p>
+                    </div>
+                    <div class="pager">
+                        <input id="btnCalificar" name="calificar" class="btn btn-primary" type="submit" value="Revisar">
+                        <input id="btnResetear" name="resetear" class="btn btn-default" type="submit" value="Limpiar">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div id="EscribeControles" class="col-xs-12 text-center">
+                    <ul class="pager">
+                        <li id="btnPrev" class="previous"><a href="#">Previous</a></li>
+                        <li><span id="pageNumber"></span> / <span id="pageTotal"></span></li>
+                        <li id="btnNext" class="next"><a href="#">Next</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <div id="dialog" class="retroalimentacion" title="Mensaje">
+            <p>&nbsp</p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+    <script src="js/completarEscribiendoDaRespuesta.js"></script>
+</body>
+</html>
